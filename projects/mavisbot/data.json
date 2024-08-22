@@ -1,0 +1,26 @@
+{
+  "name": "Mavis Bot",
+  "description": "The one and only Mavis Market bot",
+  "websites": [
+    {
+      "url": "https://discord.gg/NMvmA6uJSN",
+      "description": "Install the bot"
+    }
+  ],
+  "contracts": [
+    {
+      "address": "0x47b5a7c2e4f07772696bbf8c8c32fe2b9eabd550",
+      "label": "Moki Genesis",
+      "description": "They are just cool :)"
+    }
+  ],
+  "categories": [
+    "tool",
+    "other"
+  ],
+  "email": "noreply@axieinfinity.com",
+  "social": {
+    "x": "https://x.com/wehmoen",
+    "discord": "https://discord.gg/NMvmA6uJSN"
+  }
+}
