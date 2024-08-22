@@ -1,0 +1,15 @@
+name: Ronin Ecosystem Validator
+
+on:
+  pull_request:
+    types: [closed]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  tds_check:
+    name: "Ronin Buddy"
+    uses: './.github/workflows/ci.yml'
+    secrets: inherit

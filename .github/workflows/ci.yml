@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  workflow_call:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  check:
+    name: "Coding Chores"
+    runs-on: self-hosted
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: "Run Automated Tests"
+        uses: wehmoen-dev/validate_ecosystem@v1.0.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          validator_version: 'latest'
+          slack_webhook_url: ${{ secrets.SLACK_WEBHOOK_URL }}
+          buddy_installation_id: ${{ secrets.BUDDY_INSTALLATION_ID }}
+          buddy_private_key: ${{ secrets.BUDDY_PRIVATE_KEY }}
