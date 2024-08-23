@@ -15,7 +15,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.hread_ref }}
+          ref: ${{ github.head_ref }}
 
       - name: "Run Automated Tests"
         uses: wehmoen-dev/validate_ecosystem@debug
