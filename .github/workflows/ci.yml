@@ -2,6 +2,13 @@ name: CI
 
 on:
   workflow_call:
+    inputs:
+      ref:
+        required: true
+        type: string
+      repository:
+        required: true
+        type: string
 
 permissions:
   contents: write
@@ -15,8 +22,8 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.head_ref }}
-          repository: ${{github.event.pull_request.head.repo.full_name}}
+          ref: ${{ github.event.inputs.ref }}
+          repository: ${{ github.event.inputs.repository }}
 
       - name: "Run Automated Tests"
         uses: wehmoen-dev/validate_ecosystem@v1.1.2

@@ -13,3 +13,6 @@ jobs:
     name: "Ronin Buddy"
     uses: './.github/workflows/ci.yml'
     secrets: inherit
+    with:
+      ref: ${{ github.event.pull_request.head.ref }}
+      repository: ${{ github.event.pull_request.head.repo.full_name }}
