@@ -14,9 +14,11 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
 
       - name: "Run Automated Tests"
-        uses: wehmoen-dev/validate_ecosystem@v1.1.0
+        uses: wehmoen-dev/validate_ecosystem@v1.1.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           validator_version: 'latest'
