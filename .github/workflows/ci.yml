@@ -18,7 +18,7 @@ jobs:
           ref: ${{ github.head_ref }}
 
       - name: "Run Automated Tests"
-        uses: wehmoen-dev/validate_ecosystem@debug
+        uses: wehmoen-dev/validate_ecosystem@v1.1.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           validator_version: 'latest'
