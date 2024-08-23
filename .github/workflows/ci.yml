@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: "Run Automated Tests"
-        uses: wehmoen-dev/validate_ecosystem@v1.0.0
+        uses: wehmoen-dev/validate_ecosystem@v1.1.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           validator_version: 'latest'
