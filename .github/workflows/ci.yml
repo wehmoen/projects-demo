@@ -19,7 +19,7 @@ jobs:
           repository: ${{github.event.pull_request.head.repo.full_name}}
 
       - name: "Run Automated Tests"
-        uses: wehmoen-dev/validate_ecosystem@v1.1.1
+        uses: wehmoen-dev/validate_ecosystem@v1.1.2
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           validator_version: 'latest'
