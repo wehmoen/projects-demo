@@ -29,7 +29,7 @@ jobs:
         uses: wehmoen-dev/ronin-buddy@v1.1.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          validator_version: 'latest'
           slack_webhook_url: ${{ secrets.SLACK_WEBHOOK_URL }}
-          buddy_installation_id: ${{ secrets.BUDDY_INSTALLATION_ID }}
-          buddy_private_key: ${{ secrets.BUDDY_PRIVATE_KEY }}
+          app_installation_id: ${{ secrets.BUDDY_INSTALLATION_ID }}
+          app_private_key: ${{ secrets.BUDDY_PRIVATE_KEY }}
+          app_id: 977121
