@@ -30,6 +30,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           slack_webhook_url: ${{ secrets.SLACK_WEBHOOK_URL }}
-          app_installation_id: 54210210
+          app_installation_id: 54060357
           app_private_key: ${{ secrets.BUDDY_PRIVATE_KEY }}
           app_id: 977121
