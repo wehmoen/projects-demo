@@ -26,7 +26,7 @@ jobs:
           repository: ${{ github.event.inputs.repository }}
 
       - name: "Run Automated Tests"
-        uses: wehmoen-dev/validate_ecosystem@v1.1.2
+        uses: wehmoen-dev/ronin-buddy@v1.1.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           validator_version: 'latest'
