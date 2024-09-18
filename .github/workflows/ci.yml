@@ -26,10 +26,11 @@ jobs:
           repository: ${{ github.event.inputs.repository }}
 
       - name: "Run Automated Tests"
-        uses: wehmoen-dev/ronin-buddy@develop
+        uses: wehmoen-dev/ronin-buddy@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           slack_webhook_url: ${{ secrets.SLACK_WEBHOOK_URL }}
           app_installation_id: 54060357
           app_private_key: ${{ secrets.BUDDY_PRIVATE_KEY }}
           app_id: 977121
+          sentry_dsn: ${{ secrets.SENTRY }}
