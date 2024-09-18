@@ -17,7 +17,7 @@ permissions:
 jobs:
   check:
     name: "Coding Chores"
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
