@@ -17,8 +17,7 @@ permissions:
 jobs:
   check:
     name: "Coding Chores"
-    runs-on:
-      group: Default
+    runs-on: "wehmoen-demo-action"
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
