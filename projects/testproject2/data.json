@@ -1,6 +1,5 @@
 {
   "name": "Test Project 2",
-  "description": "Testdescr.",
   "contracts": [
     {
       "address": "0x0000000000000000000000000000000000000000",
