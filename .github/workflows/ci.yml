@@ -27,7 +27,7 @@ jobs:
           fetch-depth: 0
 
       - name: "Run Automated Tests"
-        uses: wehmoen-dev/ronin-buddy@v1.1.0
+        uses: wehmoen-dev/ronin-buddy@v1.1.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           slack_webhook_url: ${{ secrets.SLACK_WEBHOOK_URL }}
