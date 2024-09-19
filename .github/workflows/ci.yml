@@ -17,13 +17,14 @@ permissions:
 jobs:
   check:
     name: "Coding Chores"
-    runs-on: "wehmoen-demo-action"
+    runs-on: wehmoen-demo-action
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.inputs.ref }}
-          repository: ${{ github.event.inputs.repository }}
+          ref: ${{ inputs.ref }}
+          repository: ${{ inputs.repository }}
+          fetch-depth: 0
 
       - name: "Run Automated Tests"
         uses: wehmoen-dev/ronin-buddy@v1.1.0
