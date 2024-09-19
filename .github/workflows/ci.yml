@@ -17,7 +17,7 @@ permissions:
 jobs:
   check:
     name: "Coding Chores"
-    runs-on: ubuntu-latest
+    runs-on: wehmoen-demo-action
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
