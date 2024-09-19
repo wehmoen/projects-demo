@@ -11,7 +11,7 @@
       "description": "Axie Marketplace"
     }
   ],
-  "contracts": [
+  "contracts": [sdf
     {
       "address": "0x0000000000000000000000000000000000000000",
       "label": "Burn Address",
