@@ -18,8 +18,9 @@
       "description": "Contract description."
     }
   ],
+  "email": "",
   "categories": [
     "game",
-    "deFi"
+    "finance"
   ]
 }

@@ -1,14 +1,12 @@
 {
-  "name": "Test Project 2",
-  "contracts": [
-    {
-      "address": "0x0000000000000000000000000000000000000000",
-      "label": "Burn Address",
-      "description": "Contract description."
-    }
+  "name": "Test Project 1",
+  "description": "Testdescr. 1",
+  "websites": [
   ],
+  "contracts": [
+  ],
+  "email": "",
   "categories": [
-    "game",
-    "deFi"
+    "game"
   ]
 }
