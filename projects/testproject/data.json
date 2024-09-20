@@ -1,6 +1,7 @@
 {
   "name": "Test Project",
   "description": "Testdescr.",
+  "email": "",
   "websites": [
     {
       "url": "https://www.google.com",
