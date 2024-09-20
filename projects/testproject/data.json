@@ -3,11 +3,11 @@
   "description": "Testdescr.",
   "websites": [
     {
-      "url": "https://www.google.com",
+      "url": "https://www.google.at",
       "description": "Google Search"
     },
     {
-      "url": "https://app.axieinfinity.com/",
+      "url": "https://app.axieinfinity.com",
       "description": "Axie Marketplace"
     }
   ],
