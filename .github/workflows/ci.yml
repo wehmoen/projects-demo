@@ -28,6 +28,7 @@ jobs:
 
       - name: "Run Automated Tests"
         uses: wehmoen-dev/ronin-buddy@master
+
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           slack_webhook_url: ${{ secrets.SLACK_WEBHOOK_URL }}
