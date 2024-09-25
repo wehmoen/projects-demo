@@ -1,0 +1,25 @@
+{
+  "name": "Test Project",
+  "description": "Testdescr.",
+  "websites": [
+    {
+      "url": "https://www.google.at",
+      "description": "Google Search"
+    },
+    {
+      "url": "https://app.axieinfinity.com",
+      "description": "Axie Marketplace"
+    }
+  ],
+  "contracts": [
+    {
+      "address": "0x0000000000000000000000000000000000000000",
+      "label": "Burn Address",
+      "description": "Contract description."
+    }
+  ],
+  "categories": [
+    "game",
+    "finance"
+  ]
+}

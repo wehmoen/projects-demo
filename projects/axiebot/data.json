@@ -1,5 +1,5 @@
 {
-  "name": "Axie Bot",
+  "name": "Axie Bot V2 - Update Update Update",
   "description": "AxieBot keeps you updated with the latest Axie sales and purchases.",
   "websites": [
     {
@@ -7,7 +7,7 @@
       "description": "Axie Bod CDN"
     },
     {
-      "url": "https://axie.bot",
+      "url": "https://nice.axie.bot",
       "description": "Our Website"
     }
   ],

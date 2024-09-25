@@ -2,6 +2,13 @@ name: CI
 
 on:
   workflow_call:
+    inputs:
+      ref:
+        required: true
+        type: string
+      repository:
+        required: true
+        type: string
 
 permissions:
   contents: write
@@ -10,19 +17,22 @@ permissions:
 jobs:
   check:
     name: "Coding Chores"
-    runs-on: self-hosted
+    runs-on: wehmoen-demo-action
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.head_ref }}
-          repository: ${{github.event.pull_request.head.repo.full_name}}
+          ref: ${{ inputs.ref }}
+          repository: ${{ inputs.repository }}
+          fetch-depth: 0
 
       - name: "Run Automated Tests"
-        uses: wehmoen-dev/validate_ecosystem@debug
+        uses: wehmoen-dev/ronin-buddy@master
+
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          validator_version: 'latest'
           slack_webhook_url: ${{ secrets.SLACK_WEBHOOK_URL }}
-          buddy_installation_id: ${{ secrets.BUDDY_INSTALLATION_ID }}
-          buddy_private_key: ${{ secrets.BUDDY_PRIVATE_KEY }}
+          app_installation_id: 54060357
+          app_private_key: ${{ secrets.BUDDY_PRIVATE_KEY }}
+          app_id: 977121
+          sentry_dsn: ${{ secrets.SENTRY }}
